@@ -1,58 +1,59 @@
-🧠 Sentiment Analysis on Women’s E-Commerce Clothing Reviews
-A machine learning project that performs sentiment analysis on real-world customer reviews from a women’s clothing e-commerce platform using Natural Language Processing (NLP) techniques.
+# 🧠 Sentiment Analysis on Women’s E-Commerce Clothing Reviews
 
-📁 Dataset
-Source: Kaggle - Women's E-Commerce Clothing Reviews
+A machine learning project that performs **sentiment analysis** on real-world customer reviews from a women’s clothing e-commerce platform using **Natural Language Processing (NLP)** techniques.
 
-Description: Contains 23,000+ reviews with attributes like review text, rating, title, age, product ID, and recommendation status.
+---
 
-🛠️ Technologies Used
-Language: Python
+## 📁 Dataset
 
-Libraries:
+- **Source:** [Kaggle - Women's E-Commerce Clothing Reviews](https://www.kaggle.com/datasets/nicapotato/womens-ecommerce-clothing-reviews)  
+- **Description:** Contains **23,000+ reviews** with attributes like review text, rating, title, age, product ID, and recommendation status.
 
-pandas, numpy for data manipulation
+---
 
-matplotlib, seaborn for data visualization
+## 🛠️ Technologies Used
 
-nltk for NLP and text preprocessing
+- **Language:** Python  
+- **Libraries:**  
+  - `pandas`, `numpy` for data manipulation  
+  - `matplotlib`, `seaborn` for data visualization  
+  - `nltk` for NLP and text preprocessing  
+  - `scikit-learn` for machine learning models  
 
-scikit-learn for machine learning models
+---
 
-✨ Key Features
-✅ Exploratory Data Analysis (EDA)
+## ✨ Key Features
 
-✅ Text Preprocessing:
+### ✅ Exploratory Data Analysis (EDA)
 
-Lowercasing
+### ✅ Text Preprocessing
+- Lowercasing  
+- Punctuation removal  
+- Stopword removal  
 
-Punctuation removal
+### ✅ Sentiment Labeling
+- `Rating ≥ 4` → **Positive**  
+- `Rating ≤ 2` → **Negative**  
+- `Rating = 3` → **Neutral** (excluded for binary classification)  
 
-Stopword removal
+### ✅ Feature Engineering
+- TF-IDF Vectorization
 
-✅ Sentiment Labeling:
+### ✅ Model Training
+- Logistic Regression  
+- Multinomial Naive Bayes  
+- Random Forest  
 
-Rating ≥ 4 → Positive
+### ✅ Evaluation
+- Accuracy Score  
+- F1 Score  
 
-Rating ≤ 2 → Negative
+---
 
-Rating = 3 → Neutral (excluded for binary classification)
+## 📊 Results
 
-✅ Feature Engineering using TF-IDF Vectorization
+- **TF-IDF Vectorization** significantly improved classification accuracy.  
+- **Logistic Regression** and **Multinomial Naive Bayes** yielded the best performance.  
+- Achieved **high accuracy** for binary sentiment classification.
 
-✅ Training of multiple ML models:
-
-Logistic Regression
-
-Multinomial Naive Bayes
-
-Random Forest
-
-✅ Performance Evaluation using Accuracy and F1-Score
-
-📊 Results
-TF-IDF Vectorization improved classification accuracy.
-
-Logistic Regression and Multinomial Naive Bayes provided the best performance.
-
-Achieved high accuracy for binary sentiment classification.
+---
